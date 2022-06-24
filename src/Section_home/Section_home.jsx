@@ -1,5 +1,8 @@
 import React from 'react'
 // import './Section_home.css'
+// FaAngleDown
+import { FaAngleDown } from "react-icons/fa";
+
 import "./Section_home.css"
 const Section_home = () => {
   return (
@@ -19,6 +22,7 @@ const Section_home = () => {
 <div className='section_button'>
  <button className='order'>CUSTOM ORDER</button>
  <button className='inventory'>EXISTING INVENTORY</button>
+ <FaAngleDown className='arrow'/>
 </div>
 
 
