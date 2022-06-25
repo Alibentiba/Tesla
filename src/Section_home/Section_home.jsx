@@ -49,7 +49,7 @@ console.log('fdgjdsflkjgldkfsg:kj',openmenu)
  <FaAngleDown className='arrow'/>
 </div>
 {openmenu && 
-
+ <Fade right>
 <div className="sidbar-menu">
   <div className='sidbar-close-icon'>
     <AiOutlineClose className='close-icon' onClick={close}/>
@@ -68,7 +68,7 @@ console.log('fdgjdsflkjgldkfsg:kj',openmenu)
 <li>Find Us</li>
 <li>Support</li>
 <li>Investor Relations</li>
-</div>
+</div></Fade>
 }
 
 
