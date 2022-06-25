@@ -2,12 +2,12 @@ import React from 'react'
 // import './Section_home.css'
 // FaAngleDown
 import { FaAngleDown } from "react-icons/fa";
-
+// 'images/model-3.jpg'
 import "./Section_home.css"
-const Section_home = () => {
+const Section_home = ({title,descreption,leftbtntext,rightbtntext,bgimage}) => {
   return (
     <div className='Section_home' style={{
-      backgroundImage:`url('images/model-3.jpg')` ,
+      backgroundImage:`url(${bgimage})` ,
       width: "100%",
       height: "98vh",
       backgroundPosition: "center",
@@ -16,12 +16,18 @@ const Section_home = () => {
     }}>
 
 <div className='section_text'>
-  <h1>Model S</h1>
-  <p>Order Online for Touchless Delivery</p>
+  <h1>{title}</h1>
+  <p>{descreption}</p>
 </div>
+
 <div className='section_button'>
- <button className='order'>CUSTOM ORDER</button>
- <button className='inventory'>EXISTING INVENTORY</button>
+  <div className='section_2button'>
+ <button className='order'>{leftbtntext}</button>
+{rightbtntext && <button className='inventory'>{rightbtntext}</button>}
+
+
+
+ </div>
  <FaAngleDown className='arrow'/>
 </div>
 
