@@ -1,5 +1,5 @@
 .Header{
-    width: 100%;
+    width: 94%;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -41,6 +41,7 @@
     width: 30px;
     height: auto;
     margin-top: -2%;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 400px) {

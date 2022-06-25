@@ -1,8 +1,16 @@
 import React from 'react'
 import "./Header.css"
 import {VscMenu} from 'react-icons/vsc';
+import {menustate} from '../Redux/Slice'
+import {useSelector} from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 const Header = () => {
+  const dispatch = useDispatch()
+  const openmenu= useSelector(state=>state.counterstore.statemenu)
+
+
+
   return (
     <div className='Header'>
         <img src="images/logo.svg" alt="logo" />
@@ -18,7 +26,7 @@ const Header = () => {
 <div className='right-menu'>
   <a className='menu-item' href="">Shop</a>
   <a className='menu-item' href="">Account</a>
- <VscMenu className='menu-icon'/>
+ <VscMenu className='menu-icon' onClick={() => dispatch(menustate(!openmenu))}/>
 </div>
 
 
