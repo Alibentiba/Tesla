@@ -46,7 +46,7 @@ console.log('fdgjdsflkjgldkfsg:kj',openmenu)
 
  </div>
  </Fade>
- <FaAngleDown className='arrow'/>
+ <FaAngleDown className='bounce arrow'/>
 </div>
 {openmenu && 
  <Fade right>
